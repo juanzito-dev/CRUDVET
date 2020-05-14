@@ -1,4 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
+
+'JUAN ANDRES RODRIGUEZ FACAL
 Public Class Form1
     Dim cmd As New MySqlCommand
 
@@ -12,8 +14,6 @@ Public Class Form1
         adap.Fill(dataset, "Grid")
         data_animales.DataSource = dataset.Tables(0)
         conexion.Close()
-
-        'siempre limpia campos
         TextBox1.Clear()
         TextBox2.Clear()
         TextBox3.Clear()
